@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes BAKERY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="nav">
+        <div class="nav__brand">BAKERY<span class="nav__dot">*</span></div>
+
+        <nav class="nav__links">
+            <a href="#tours">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#preguntas">Preguntas</a>
+        </nav>
+
+        <button class="nav__menu" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <section class="hero">
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content">
+            <p class="eyebrow">Colombia</p>
+            <h1>Uno de los Paises <em>con mas biodiversidad</em><br> del mundo</h1>
+            <p class="hero__subtitle">Cinco colores, un solo río. Conoce Caño Cristales.</p>
+            <a href="#tours" class="btn btn--light">Reservar ahora</a>
+        </div>
+
+        <div class="hero__controls">
+            <button aria-label="Anterior">←</button>
+            <button aria-label="Siguiente">→</button>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Desliza</span>
+            <div class="hero__scroll-dot"></div>
+        </div>
+    </section>
+
+    <section class="values">
+        <h2>Por qué viajar con nosotros</h2>
+        <p class="section__subtitle">Beneficios pensados para tu aventura</p>
+
+        <div class="values__grid">
+            <div class="value">
+                <div class="value__icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M6 30V16a4 4 0 0 1 4-4h16l8 8h4a4 4 0 0 1 4 4v6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <circle cx="14" cy="32" r="3.5" />
+                        <circle cx="34" cy="32" r="3.5" />
+                        <path d="M17.5 32h13" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Transporte incluido</h3>
+                <p>Te recogemos desde el aeropuerto hasta el punto de encuentro.</p>
+            </div>
+
+            <div class="value">
+                <div class="value__icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <rect x="8" y="10" width="32" height="30" rx="3" />
+                        <path d="M8 18h32" stroke-linecap="round" />
+                        <path d="M16 6v8M32 6v8" stroke-linecap="round" />
+                        <path d="M17 28l5 5 9-9" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Reserva fácil</h3>
+                <p>Aparta tu cupo en pocos pasos, sin filas ni papeleo.</p>
+            </div>
+
+            <div class="value">
+                <div class="value__icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <circle cx="24" cy="24" r="17" />
+                        <path d="M30 18l-4 10-8 4 4-10z" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Guías locales</h3>
+                <p>Conocen cada sendero y cuidan el ecosistema del río.</p>
+            </div>
+
+            <div class="value">
+                <div class="value__icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M8 26 26 8h12v12L20 38a3 3 0 0 1-4 0l-8-8a3 3 0 0 1 0-4z" stroke-linejoin="round" />
+                        <circle cx="31" cy="15" r="2.2" fill="currentColor" stroke="none" />
+                    </svg>
+                </div>
+                <h3>Promociones</h3>
+                <p>Descuentos por temporada y planes para grupos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours" id="tours">
+        <h2>Elige tu aventura</h2>
+        <p class="section__subtitle">Cuatro formas de vivir la región</p>
+
+        <div class="tours__grid">
+            <article class="tour-card tour-card--rojo">
+                <div class="tour-card__image"
+                    style="background-image:url('https://picsum.photos/seed/cano-rojo/600/450')">
+                    <span class="tour-card__rating">★ 5.0</span>
+                </div>
+                <div class="tour-card__body">
+                    <h3>Los Ojos del Río</h3>
+                    <p class="tour-card__price">$120 <span>/ persona</span></p>
+                </div>
+                <button class="tour-card__arrow" aria-label="Ver tour Los Ojos del Río">→</button>
+            </article>
+
+            <article class="tour-card tour-card--ocre">
+                <div class="tour-card__image"
+                    style="background-image:url('https://picsum.photos/seed/cano-ocre/600/450')">
+                    <span class="tour-card__rating">★ 4.9</span>
+                </div>
+                <div class="tour-card__body">
+                    <h3>Sendero La Macarena</h3>
+                    <p class="tour-card__price">$95 <span>/ persona</span></p>
+                </div>
+                <button class="tour-card__arrow" aria-label="Ver tour Sendero La Macarena">→</button>
+            </article>
+
+            <article class="tour-card tour-card--verde">
+                <div class="tour-card__image"
+                    style="background-image:url('https://picsum.photos/seed/cano-verde/600/450')">
+                    <span class="tour-card__rating">★ 5.0</span>
+                </div>
+                <div class="tour-card__body">
+                    <h3>Noche de estrellas</h3>
+                    <p class="tour-card__price">$140 <span>/ persona</span></p>
+                </div>
+                <button class="tour-card__arrow" aria-label="Ver tour Noche de estrellas">→</button>
+            </article>
+
+            <article class="tour-card tour-card--azul">
+                <div class="tour-card__image"
+                    style="background-image:url('https://picsum.photos/seed/cano-azul/600/450')">
+                    <span class="tour-card__rating">★ 4.8</span>
+                </div>
+                <div class="tour-card__body">
+                    <h3>Río completo</h3>
+                    <p class="tour-card__price">$210 <span>/ persona</span></p>
+                </div>
+                <button class="tour-card__arrow" aria-label="Ver tour Río completo">→</button>
+            </article>
+        </div>
+
+        <button class="btn btn--outline">Ver todos</button>
+    </section>
+
+    <section class="cta">
+        <h2>Tu próxima historia empieza aquí</h2>
+        <a href="#reservas" class="btn btn--light">Reservar ahora</a>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 BAKERY</p>
+    </footer>
+
+</body>
+
+</html>
